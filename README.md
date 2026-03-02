@@ -1,6 +1,6 @@
 # Pac-Man Like Game (Python)
 
-A small Pac-Man inspired game built with **Python + Tkinter** (no external dependencies).
+A larger, better-looking Pac-Man-inspired game built with **Python + Tkinter**.
 
 ## Run
 
@@ -11,6 +11,13 @@ python3 pacman_game.py
 ## Controls
 
 - Arrow keys to move
-- Eat pellets (`.`) to score points
-- Eat power pellets (`o`) to turn the ghost vulnerable
-- Press `R` to restart after win/loss
+- Eat pellets (`.`) and power pellets (`o`) to score
+- During power mode, ghosts turn blue and can be eaten
+- Press `R` after win/loss to restart
+
+## Ghost AI
+
+- **Blinky (red / chaser):** directly chases player
+- **Pinky (pink / ambusher):** aims ahead of player movement
+- **Inky (cyan / random):** mostly unpredictable
+- **Clyde (orange / scatter):** tends toward lower-right area with occasional randomness
