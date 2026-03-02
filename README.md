@@ -1,6 +1,6 @@
 # Pac-Man Like Game (Python)
 
-A larger, better-looking Pac-Man-inspired game built with **Python + Tkinter**.
+A Pac-Man-inspired game built with **Python + Tkinter**, now with an AI-controlled Pac-Man that learns with **Q-Learning**.
 
 ## Run
 
@@ -8,12 +8,16 @@ A larger, better-looking Pac-Man-inspired game built with **Python + Tkinter**.
 python3 pacman_game.py
 ```
 
+## What changed
+
+- Pac-Man is controlled by a Q-learning agent (no manual movement controls).
+- The agent uses epsilon-greedy exploration and updates its Q-table every game tick.
+- Rewards are based on pellets, power pellets, eating ghosts, surviving, and avoiding death.
+- The HUD shows learning stats (`ε` and training steps).
+
 ## Controls
 
-- Arrow keys to move
-- Eat pellets (`.`) and power pellets (`o`) to score
-- During power mode, ghosts turn blue and can be eaten
-- Press `R` after win/loss to restart
+- Press `R` to restart a run.
 
 ## Ghost AI
 
